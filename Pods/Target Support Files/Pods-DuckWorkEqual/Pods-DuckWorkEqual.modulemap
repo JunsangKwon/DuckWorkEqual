@@ -1,0 +1,6 @@
+framework module Pods_DuckWorkEqual {
+  umbrella header "Pods-DuckWorkEqual-umbrella.h"
+
+  export *
+  module * { export * }
+}
