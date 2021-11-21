@@ -17,6 +17,10 @@
 		2D8B99E927476444008F2ABE /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8B99E827476444008F2ABE /* UIColor+.swift */; };
 		2D8B99F827477231008F2ABE /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8B99F727477231008F2ABE /* UIView+.swift */; };
 		2D8B99FF2747820A008F2ABE /* StartTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8B99FE2747820A008F2ABE /* StartTestViewController.swift */; };
+		2DF5AC972748E93C00438CA1 /* TestQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF5AC962748E93C00438CA1 /* TestQuestionViewController.swift */; };
+		2DF5AC9E2748F0A300438CA1 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF5AC9D2748F0A300438CA1 /* TestData.swift */; };
+		2DF5ACA3274A1B5B00438CA1 /* QuestionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF5ACA2274A1B5B00438CA1 /* QuestionButton.swift */; };
+		2DF5ACA7274A353500438CA1 /* TestResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF5ACA6274A353500438CA1 /* TestResultViewController.swift */; };
 		9D0B19EBE18B0545F4673AFB /* Pods_DuckWorkEqual.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2A3D47FF22B1F1579F44F17 /* Pods_DuckWorkEqual.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +37,10 @@
 		2D8B99E827476444008F2ABE /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		2D8B99F727477231008F2ABE /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		2D8B99FE2747820A008F2ABE /* StartTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTestViewController.swift; sourceTree = "<group>"; };
+		2DF5AC962748E93C00438CA1 /* TestQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestQuestionViewController.swift; sourceTree = "<group>"; };
+		2DF5AC9D2748F0A300438CA1 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		2DF5ACA2274A1B5B00438CA1 /* QuestionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionButton.swift; sourceTree = "<group>"; };
+		2DF5ACA6274A353500438CA1 /* TestResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultViewController.swift; sourceTree = "<group>"; };
 		7B91600F4AC52077B9D1FDAE /* Pods-DuckWorkEqual.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckWorkEqual.debug.xcconfig"; path = "Target Support Files/Pods-DuckWorkEqual/Pods-DuckWorkEqual.debug.xcconfig"; sourceTree = "<group>"; };
 		95969BD2D01764C761652B33 /* Pods-DuckWorkEqual.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckWorkEqual.release.xcconfig"; path = "Target Support Files/Pods-DuckWorkEqual/Pods-DuckWorkEqual.release.xcconfig"; sourceTree = "<group>"; };
 		D2A3D47FF22B1F1579F44F17 /* Pods_DuckWorkEqual.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DuckWorkEqual.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				2D8B99FE2747820A008F2ABE /* StartTestViewController.swift */,
+				2DF5AC962748E93C00438CA1 /* TestQuestionViewController.swift */,
+				2DF5ACA6274A353500438CA1 /* TestResultViewController.swift */,
+				2DF5AC9D2748F0A300438CA1 /* TestData.swift */,
+				2DF5ACA2274A1B5B00438CA1 /* QuestionButton.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -235,10 +247,14 @@
 				2D8B99E32744C4C1008F2ABE /* Then.swift in Sources */,
 				2D8B99C92744C0D8008F2ABE /* SignInViewController.swift in Sources */,
 				2D8B99F827477231008F2ABE /* UIView+.swift in Sources */,
+				2DF5ACA7274A353500438CA1 /* TestResultViewController.swift in Sources */,
+				2DF5AC9E2748F0A300438CA1 /* TestData.swift in Sources */,
 				2D8B99C52744C0D8008F2ABE /* AppDelegate.swift in Sources */,
 				2D8B99C72744C0D8008F2ABE /* SceneDelegate.swift in Sources */,
 				2D8B99FF2747820A008F2ABE /* StartTestViewController.swift in Sources */,
 				2D8B99E62747640A008F2ABE /* UIButton+.swift in Sources */,
+				2DF5AC972748E93C00438CA1 /* TestQuestionViewController.swift in Sources */,
+				2DF5ACA3274A1B5B00438CA1 /* QuestionButton.swift in Sources */,
 				2D8B99E927476444008F2ABE /* UIColor+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

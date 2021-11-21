@@ -72,6 +72,7 @@ class StartTestViewController: UIViewController {
         $0.clipsToBounds = true
         $0.layer.cornerRadius = 8
         $0.setBackgroundColor(UIColor.colorWithRGBHex(hex: 0x4D86F5), for: .normal)
+        $0.addTarget(self, action: #selector(goToTestQuestionVC), for: .touchUpInside)
     }
     
     override func viewDidLoad() {
@@ -138,4 +139,8 @@ class StartTestViewController: UIViewController {
         }
     }
 
+    @objc func goToTestQuestionVC() {
+        let vc = TestQuestionViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
