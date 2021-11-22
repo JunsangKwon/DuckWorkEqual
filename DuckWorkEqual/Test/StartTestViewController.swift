@@ -140,7 +140,7 @@ class StartTestViewController: UIViewController {
     }
 
     @objc func goToTestQuestionVC() {
-        let vc = TestQuestionViewController()
+        let vc = TestResultViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
