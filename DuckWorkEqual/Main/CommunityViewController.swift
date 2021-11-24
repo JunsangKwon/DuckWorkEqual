@@ -29,7 +29,8 @@ class CommunityViewController: UIViewController {
     }
     
     func setNavBar() {
-        navigationItem.title = "검사 결과"
+        navigationController?.isNavigationBarHidden = false
+        navigationItem.title = "커뮤니티"
         navigationItem.setHidesBackButton(true, animated: true)
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.shadowImage = UIImage()

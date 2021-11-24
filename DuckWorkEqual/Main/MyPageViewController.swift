@@ -28,7 +28,7 @@ class MyPageViewController: UIViewController {
     }
     
     func setNavBar() {
-        navigationItem.title = "검사 결과"
+        navigationItem.title = "내 정보"
         navigationItem.setHidesBackButton(true, animated: true)
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.shadowImage = UIImage()
@@ -73,5 +73,25 @@ extension MyPageViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 0:
+            let vc = ScrapEnterpriseViewController()
+            navigationController?.pushViewController(vc, animated: true)
+        case 1:
+            print("미구현")
+        case 2:
+            let vc = ShowResultViewController()
+            navigationController?.pushViewController(vc, animated: true)
+        case 3:
+            let vc = VolunteerViewController()
+            navigationController?.pushViewController(vc, animated: true)
+        case 4:
+            let vc = ExperienceViewController()
+            navigationController?.pushViewController(vc, animated: true)
+        default:
+            return
+        }
+    }
     
 }

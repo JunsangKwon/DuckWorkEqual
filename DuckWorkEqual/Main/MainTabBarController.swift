@@ -19,7 +19,7 @@ class MainTabBarController: UITabBarController {
     
     func setTabBar() {
         let recommendNVC = UINavigationController(rootViewController: RecommendEnterpriseViewController())
-        let communityVC =  CommunityViewController()
+        let communityVC =  UINavigationController(rootViewController:CommunityViewController())
         let myPageNVC = UINavigationController(rootViewController: MyPageViewController())
         self.tabBar.tintColor = .colorWithRGBHex(hex: 0x969799)
       
