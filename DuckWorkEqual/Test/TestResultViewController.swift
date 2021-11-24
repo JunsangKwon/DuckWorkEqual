@@ -9,6 +9,9 @@ import UIKit
 import SnapKit
 
 class TestResultViewController: UIViewController {
+    
+    let sceneDelegate = UIApplication.shared.connectedScenes
+            .first!.delegate as! SceneDelegate
         
     let resultTableView = UITableView(frame: .zero, style: .grouped).then {
         $0.showsVerticalScrollIndicator = false
@@ -77,8 +80,8 @@ class TestResultViewController: UIViewController {
     }
     
     @objc func goToTabVC() {
-        let vc = TestQuestionViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
+        UserDefaults.standard.setValue(true, forKey: SignInViewController.testKey)
+        sceneDelegate.window?.rootViewController = MainTabBarController()
     }
     
 }

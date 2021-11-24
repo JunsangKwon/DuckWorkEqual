@@ -12,6 +12,8 @@ import KakaoSDKUser
 
 class SignInViewController: UIViewController {
     
+    let sceneDelegate = UIApplication.shared.connectedScenes
+            .first!.delegate as! SceneDelegate
     var didUserTakeTest = UserDefaults.standard.bool(forKey: SignInViewController.testKey)
     static var testKey = "takeTest"
     
@@ -85,7 +87,7 @@ class SignInViewController: UIViewController {
                 _ = oauthToken
                 self.setUserInfo()
                 if self.didUserTakeTest {
-                    // 다음으로 넘어가는 코드
+                    self.sceneDelegate.window?.rootViewController = MainTabBarController()
                 } else {
                     let vc = StartTestViewController()
                     self.navigationController?.pushViewController(vc, animated: true)
