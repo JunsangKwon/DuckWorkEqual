@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D7E5C972750B090008A72E7 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7E5C962750B090008A72E7 /* ReviewViewController.swift */; };
 		2D8B99C52744C0D8008F2ABE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8B99C42744C0D8008F2ABE /* AppDelegate.swift */; };
 		2D8B99C72744C0D8008F2ABE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8B99C62744C0D8008F2ABE /* SceneDelegate.swift */; };
 		2D8B99C92744C0D8008F2ABE /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8B99C82744C0D8008F2ABE /* SignInViewController.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D7E5C962750B090008A72E7 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		2D8B99C12744C0D8008F2ABE /* DuckWorkEqual.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuckWorkEqual.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D8B99C42744C0D8008F2ABE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D8B99C62744C0D8008F2ABE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				2DF5ACF9274EA13D00438CA1 /* VolunteerViewController.swift */,
 				2DF5ACFF274EA66400438CA1 /* ExperienceViewController.swift */,
 				2DF5AD05274F6BC900438CA1 /* DetailViewController.swift */,
+				2D7E5C962750B090008A72E7 /* ReviewViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 			files = (
 				2DF5ACCF274E0D4C00438CA1 /* MyPageViewController.swift in Sources */,
 				2DF5ACFA274EA13D00438CA1 /* VolunteerViewController.swift in Sources */,
+				2D7E5C972750B090008A72E7 /* ReviewViewController.swift in Sources */,
 				2D8B99E32744C4C1008F2ABE /* Then.swift in Sources */,
 				2DF5ACF4274E9EDB00438CA1 /* ScrapEnterpriseViewController.swift in Sources */,
 				2DF5ACF7274E9F0E00438CA1 /* ScrapCell.swift in Sources */,

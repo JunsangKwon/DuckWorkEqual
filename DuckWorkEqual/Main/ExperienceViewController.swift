@@ -68,6 +68,11 @@ class ExperienceViewController: UIViewController {
     @objc func backButtonTap() {
         self.navigationController?.popViewController(animated: true)
     }
+    
+    @objc func goToReviewVC() {
+        let vc = ReviewViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 
 }
 
@@ -86,7 +91,7 @@ extension ExperienceViewController: UICollectionViewDelegate, UICollectionViewDa
         else {
             return UICollectionViewCell()
         }
-        
+        cell.reviewButton.addTarget(self, action: #selector(goToReviewVC), for: .touchUpInside)
         return cell
     }
     

@@ -11,7 +11,7 @@ target 'DuckWorkEqual' do
   pod 'KakaoSDKCommon'
   pod 'KakaoSDKAuth'
   pod 'KakaoSDKUser'
-
+  pod 'Cosmos', '~> 23.0'
   # Pods for DuckWorkEqual
 
 end
