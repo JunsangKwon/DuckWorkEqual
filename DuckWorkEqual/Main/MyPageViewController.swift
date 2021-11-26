@@ -79,7 +79,8 @@ extension MyPageViewController: UITableViewDelegate, UITableViewDataSource {
             let vc = ScrapEnterpriseViewController()
             navigationController?.pushViewController(vc, animated: true)
         case 1:
-            print("미구현")
+            let vc = ResumeViewController()
+            navigationController?.pushViewController(vc, animated: true)
         case 2:
             let vc = ShowResultViewController()
             navigationController?.pushViewController(vc, animated: true)

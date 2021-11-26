@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2D7E5C972750B090008A72E7 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7E5C962750B090008A72E7 /* ReviewViewController.swift */; };
+		2D7E5C9A2750BE6E008A72E7 /* ResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7E5C992750BE6E008A72E7 /* ResumeViewController.swift */; };
 		2D8B99C52744C0D8008F2ABE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8B99C42744C0D8008F2ABE /* AppDelegate.swift */; };
 		2D8B99C72744C0D8008F2ABE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8B99C62744C0D8008F2ABE /* SceneDelegate.swift */; };
 		2D8B99C92744C0D8008F2ABE /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8B99C82744C0D8008F2ABE /* SignInViewController.swift */; };
@@ -49,6 +50,7 @@
 
 /* Begin PBXFileReference section */
 		2D7E5C962750B090008A72E7 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		2D7E5C992750BE6E008A72E7 /* ResumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeViewController.swift; sourceTree = "<group>"; };
 		2D8B99C12744C0D8008F2ABE /* DuckWorkEqual.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuckWorkEqual.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D8B99C42744C0D8008F2ABE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D8B99C62744C0D8008F2ABE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				2DF5ACCB274E0B5000438CA1 /* CommunityViewController.swift */,
 				2DF5ACE9274E967B00438CA1 /* NoticeHeaderView.swift */,
 				2DF5ACCE274E0D4C00438CA1 /* MyPageViewController.swift */,
+				2D7E5C992750BE6E008A72E7 /* ResumeViewController.swift */,
 				2DF5ACF0274E9E2300438CA1 /* ShowResultViewController.swift */,
 				2DF5ACF3274E9EDB00438CA1 /* ScrapEnterpriseViewController.swift */,
 				2DF5ACF9274EA13D00438CA1 /* VolunteerViewController.swift */,
@@ -346,6 +349,7 @@
 				2DF5AD12274F73FF00438CA1 /* ReviewCell.swift in Sources */,
 				2D8B99C92744C0D8008F2ABE /* SignInViewController.swift in Sources */,
 				2DF5ACCC274E0B5000438CA1 /* CommunityViewController.swift in Sources */,
+				2D7E5C9A2750BE6E008A72E7 /* ResumeViewController.swift in Sources */,
 				2DF5ACD2274E1C2E00438CA1 /* EnterpriseCell.swift in Sources */,
 				2D8B99F827477231008F2ABE /* UIView+.swift in Sources */,
 				2DF5ACC9274E0B1900438CA1 /* RecommendEnterpriseViewController.swift in Sources */,
