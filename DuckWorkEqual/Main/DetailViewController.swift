@@ -92,6 +92,8 @@ class DetailViewController: UIViewController {
     }
     
     @objc func goToTabVC() {
+        let vc = SubmitResumeViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
 }

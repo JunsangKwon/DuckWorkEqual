@@ -108,7 +108,7 @@ class TestQuestionViewController: UIViewController {
     }
     
     let previousQuestionButton = UIButton().then {
-        $0.setImage(UIImage(systemName: "chevron.left"), for: .normal)
+        $0.setImage(UIImage(named: "arrow_left_icon"), for: .normal)
         $0.tintColor = .white
         $0.clipsToBounds = true
         $0.layer.cornerRadius = 25
@@ -117,7 +117,7 @@ class TestQuestionViewController: UIViewController {
     }
     
     let nextQuestionButton = UIButton().then {
-        $0.setImage(UIImage(systemName: "chevron.right"), for: .normal)
+        $0.setImage(UIImage(named: "arrow_right_icon"), for: .normal)
         $0.tintColor = .white
         $0.clipsToBounds = true
         $0.layer.cornerRadius = 25

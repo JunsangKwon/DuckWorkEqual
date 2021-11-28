@@ -74,7 +74,8 @@ class SignInViewController: UIViewController {
     }
     
     func setUserDefault() {
-        UserDefaults.standard.register(defaults: [SignInViewController.testKey : false])
+//        UserDefaults.standard.register(defaults: [SignInViewController.testKey : false])
+        UserDefaults.standard.setValue(false, forKey: SignInViewController.testKey)
     }
     
     @objc func kakaoSignInButtonDidTap(sender: UITapGestureRecognizer) {

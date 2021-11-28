@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2D7E5C972750B090008A72E7 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7E5C962750B090008A72E7 /* ReviewViewController.swift */; };
 		2D7E5C9A2750BE6E008A72E7 /* ResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7E5C992750BE6E008A72E7 /* ResumeViewController.swift */; };
+		2D7E5C9E27522A8B008A72E7 /* SubmitResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7E5C9D27522A8B008A72E7 /* SubmitResumeViewController.swift */; };
 		2D8B99C52744C0D8008F2ABE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8B99C42744C0D8008F2ABE /* AppDelegate.swift */; };
 		2D8B99C72744C0D8008F2ABE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8B99C62744C0D8008F2ABE /* SceneDelegate.swift */; };
 		2D8B99C92744C0D8008F2ABE /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8B99C82744C0D8008F2ABE /* SignInViewController.swift */; };
@@ -51,6 +52,7 @@
 /* Begin PBXFileReference section */
 		2D7E5C962750B090008A72E7 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		2D7E5C992750BE6E008A72E7 /* ResumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeViewController.swift; sourceTree = "<group>"; };
+		2D7E5C9D27522A8B008A72E7 /* SubmitResumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitResumeViewController.swift; sourceTree = "<group>"; };
 		2D8B99C12744C0D8008F2ABE /* DuckWorkEqual.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuckWorkEqual.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D8B99C42744C0D8008F2ABE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D8B99C62744C0D8008F2ABE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				2DF5ACF9274EA13D00438CA1 /* VolunteerViewController.swift */,
 				2DF5ACFF274EA66400438CA1 /* ExperienceViewController.swift */,
 				2DF5AD05274F6BC900438CA1 /* DetailViewController.swift */,
+				2D7E5C9D27522A8B008A72E7 /* SubmitResumeViewController.swift */,
 				2D7E5C962750B090008A72E7 /* ReviewViewController.swift */,
 			);
 			path = Main;
@@ -355,6 +358,7 @@
 				2DF5ACC9274E0B1900438CA1 /* RecommendEnterpriseViewController.swift in Sources */,
 				2DF5ACA7274A353500438CA1 /* TestResultViewController.swift in Sources */,
 				2DF5AD03274EA67400438CA1 /* ExperienceCell.swift in Sources */,
+				2D7E5C9E27522A8B008A72E7 /* SubmitResumeViewController.swift in Sources */,
 				2DF5ACF1274E9E2300438CA1 /* ShowResultViewController.swift in Sources */,
 				2DF5ACAB274B617C00438CA1 /* ResultFeatureCell.swift in Sources */,
 				2DF5AC9E2748F0A300438CA1 /* TestData.swift in Sources */,

@@ -1,13 +1,13 @@
 //
-//  ResumeViewController.swift
+//  SubmitResumeViewController.swift
 //  DuckWorkEqual
 //
-//  Created by 권준상 on 2021/11/26.
+//  Created by 권준상 on 2021/11/27.
 //
 
 import UIKit
 
-class ResumeViewController: UIViewController {
+class SubmitResumeViewController: UIViewController {
 
     let scrollView = UIScrollView()
     
@@ -123,14 +123,14 @@ class ResumeViewController: UIViewController {
         $0.layer.borderColor = UIColor.colorWithRGBHex(hex: 0xF4F3F3).cgColor
     }
     
-    let saveButton = UIButton().then {
-        $0.setTitle("저장하기", for: .normal)
+    let submitButton = UIButton().then {
+        $0.setTitle("제출하기", for: .normal)
         $0.setTitleColor(.white, for: .normal)
         $0.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .bold)
         $0.clipsToBounds = true
         $0.layer.cornerRadius = 8
         $0.setBackgroundColor(UIColor.colorWithRGBHex(hex: 0x4D86F5), for: .normal)
-        $0.addTarget(self, action: #selector(saveButtonTap), for: .touchUpInside)
+        $0.addTarget(self, action: #selector(submitButtonTap), for: .touchUpInside)
     }
     
     override func viewDidLoad() {
@@ -169,7 +169,7 @@ class ResumeViewController: UIViewController {
     func setViewHierarchy() {
         view.addSubview(scrollView)
         scrollView.addSubview(contentsView)
-        contentsView.addSubviews(userImageView, userNameLabel, userInfoLabel, userInfoChangeButton,phoneNumberSubLabel, phoneNumberLabel, houseNumberSubLabel, houseNumberLabel, emailSubLabel, emailLabel, locationSubLabel, locationLabel, lineView, resumeTitleLabel, resumeTitleTextField, resumeSubLabel, resumeTextView, saveButton)
+        contentsView.addSubviews(userImageView, userNameLabel, userInfoLabel, userInfoChangeButton,phoneNumberSubLabel, phoneNumberLabel, houseNumberSubLabel, houseNumberLabel, emailSubLabel, emailLabel, locationSubLabel, locationLabel, lineView, resumeTitleLabel, resumeTitleTextField, resumeSubLabel, resumeTextView, submitButton)
     }
 
     func setConstraints() {
@@ -280,7 +280,7 @@ class ResumeViewController: UIViewController {
             $0.height.equalTo(175)
         }
         
-        saveButton.snp.makeConstraints {
+        submitButton.snp.makeConstraints {
             $0.leading.trailing.equalToSuperview().inset(20)
             $0.bottom.equalToSuperview().offset(-30)
             $0.height.equalTo(58)
@@ -293,8 +293,8 @@ class ResumeViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
-    @objc func saveButtonTap() {
-        showAlert(message: "저장이 완료되었습니다.")
+    @objc func submitButtonTap() {
+        showAlert(message: "제출이 완료되었습니다.")
         self.navigationController?.popViewController(animated: true)
     }
 }

@@ -8,6 +8,17 @@
 import UIKit
 
 class RecommendEnterpriseViewController: UIViewController {
+    
+    var searchBar = UISearchBar().then {
+        $0.text = "#탐구형"
+        $0.backgroundColor = .white
+        $0.clipsToBounds = true
+        $0.layer.cornerRadius = 10
+        $0.searchTextField.clipsToBounds = true
+        $0.searchTextField.layer.cornerRadius = 10
+        $0.searchTextField.backgroundColor = .white
+        $0.searchTextField.font = UIFont.systemFont(ofSize: 12)
+    }
 
     var mainCollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout()).then {
         let layout = UICollectionViewFlowLayout()
@@ -35,7 +46,7 @@ class RecommendEnterpriseViewController: UIViewController {
     
     func setNavBar() {
         navigationController?.isNavigationBarHidden = false
-        navigationItem.title = "#탐구형"
+        navigationItem.title = "기업찾기"
         navigationItem.setHidesBackButton(true, animated: true)
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.shadowImage = UIImage()
@@ -47,14 +58,22 @@ class RecommendEnterpriseViewController: UIViewController {
     }
     
     private func setViewHierarchy() {
-        view.addSubviews(mainCollectionView)
+        view.addSubviews(searchBar, mainCollectionView)
     }
     
     private func setConstraints() {
         let guide = view.safeAreaLayoutGuide
         
+        searchBar.snp.makeConstraints {
+            $0.top.equalTo(guide).offset(15)
+            $0.centerX.equalToSuperview()
+            $0.width.equalTo(337)
+            $0.height.equalTo(30)
+        }
+        
         mainCollectionView.snp.makeConstraints {
-            $0.top.leading.trailing.bottom.equalTo(guide)
+            $0.top.equalTo(searchBar.snp.bottom).offset(15)
+            $0.leading.trailing.bottom.equalTo(guide)
         }
     }
     
