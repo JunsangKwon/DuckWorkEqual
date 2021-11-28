@@ -9,10 +9,16 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
+    let imageList: [UIImage?] = [UIImage(named: "naverLogo"), UIImage(named: "kakaobank"), UIImage(named: "Dang")]
+    let enterpriseList: [String] = ["네이버(주)", "(주)카카오뱅크", "(주)당근마켓"]
+    let sizeList: [String] = ["대기업", "대기업", "스타트업"]
+    let birthDayList: [String] = ["1999년 6월 2일", "2016년 1월 22일", "2015년 6월 15일"]
+    let salesList: [String] = ["4조 1266억 2931만원", "8041억 5천만원", "-"]
     let recruitSubtitleList: [String] = ["고용형태", "근무조건", "채용부문", "담당업무", "근무지"]
     let recruitTitleList: [String] = ["청소년 체험형", "주 5일 근무", "프론트엔드 개발자", "사이트 유지 보수 및 개발", "경기 성남시 분당구(판교본사)"]
     let extraSubtitleList: [String] = ["접수기간", "접수방법"]
     let extraTitleList: [String] = ["2021년 11월 9일 ~ 2021년 11월 21일", "본 사이트 접수"]
+    static var index: Int = 0
         
     let detailTableView = UITableView(frame: .zero, style: .grouped).then {
         $0.showsVerticalScrollIndicator = false
@@ -168,6 +174,11 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
         case 0:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "IntroduceCell", for: indexPath) as? IntroduceCell else { return UITableViewCell() }
             cell.selectionStyle = .none
+            cell.logoImageView.image = imageList[DetailViewController.index]
+            cell.enterpriseLabel.text = enterpriseList[DetailViewController.index]
+            cell.sizeLabel.text = sizeList[DetailViewController.index]
+            cell.birthLabel.text = birthDayList[DetailViewController.index]
+            cell.salesLabel.text = salesList[DetailViewController.index]
             return cell
         case 1:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "RecruitCell", for: indexPath) as? RecruitCell else { return UITableViewCell() }

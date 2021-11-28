@@ -24,13 +24,11 @@ class EnterpriseCell: UICollectionViewCell {
     }
     
     let enterpriceNameLabel = UILabel().then {
-        $0.text = "(주) NAVER"
         $0.font = UIFont.systemFont(ofSize: 11, weight: .semibold)
         $0.textColor = .secondaryLabel
     }
     
     let titleLabel = UILabel().then {
-        $0.text = "[NAVER Cloud] 네이버 프론트엔드 직업체험"
         $0.font = UIFont.systemFont(ofSize: 14, weight: .bold)
         $0.textColor = .black
     }
@@ -41,9 +39,7 @@ class EnterpriseCell: UICollectionViewCell {
         $0.textColor = .secondaryLabel
     }
     
-    let logoImageView = UIImageView().then {
-        $0.image = UIImage(named: "naverLogo")
-    }
+    let logoImageView = UIImageView()
     
     let lineView = UIView().then {
         $0.backgroundColor = UIColor.colorWithRGBHex(hex: 0xF4F3F3)

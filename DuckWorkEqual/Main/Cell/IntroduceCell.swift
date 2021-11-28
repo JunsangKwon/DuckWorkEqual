@@ -10,9 +10,7 @@ import SnapKit
 
 class IntroduceCell: UITableViewCell {
         
-    let logoImageView = UIImageView().then {
-        $0.image = UIImage(named: "naverLogo")
-    }
+    let logoImageView = UIImageView()
     
     let enterpriseSubLabel = UILabel().then {
         $0.text = "기업명"
@@ -21,7 +19,6 @@ class IntroduceCell: UITableViewCell {
     }
     
     let enterpriseLabel = UILabel().then {
-        $0.text = "네이버(주)"
         $0.font = .systemFont(ofSize: 16)
         $0.textColor = .black
     }
@@ -37,7 +34,6 @@ class IntroduceCell: UITableViewCell {
     }
     
     let sizeLabel = UILabel().then {
-        $0.text = "대기업"
         $0.font = .systemFont(ofSize: 16)
         $0.textColor = .black
     }
@@ -69,7 +65,6 @@ class IntroduceCell: UITableViewCell {
     }
     
     let salesLabel = UILabel().then {
-        $0.text = "4조 1,266억 2,931만원"
         $0.font = .systemFont(ofSize: 16)
         $0.textColor = .black
     }

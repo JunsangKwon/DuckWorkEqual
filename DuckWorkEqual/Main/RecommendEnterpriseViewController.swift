@@ -9,6 +9,10 @@ import UIKit
 
 class RecommendEnterpriseViewController: UIViewController {
     
+    let imageList: [UIImage?] = [UIImage(named: "naverLogo"), UIImage(named: "kakaobank"), UIImage(named: "Dang")]
+    let enterpriseList: [String] = ["(주) NAVER", "(주)카카오뱅크", "(주)당근마켓"]
+    let titleList: [String] = ["[NAVER Cloud] 네이버 프론트엔드 직업체험", "[뉴플랫폼기술] 클라우드 엔지니어", "백엔드 개발 인턴"]
+    
     var searchBar = UISearchBar().then {
         $0.text = "#탐구형"
         $0.backgroundColor = .white
@@ -102,13 +106,16 @@ extension RecommendEnterpriseViewController: UICollectionViewDelegate, UICollect
         else {
             return UICollectionViewCell()
         }
-        
+        cell.logoImageView.image = imageList[indexPath.row]
+        cell.enterpriceNameLabel.text = enterpriseList[indexPath.item]
+        cell.titleLabel.text = titleList[indexPath.item]
         cell.scrapButton.addTarget(self, action: #selector(scrapButtonDidTap), for: .touchUpInside)
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = DetailViewController()
+        DetailViewController.index = indexPath.item
         navigationController?.pushViewController(vc, animated: true)
     }
     
